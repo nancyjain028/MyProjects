@@ -1,0 +1,410 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container-fluid .font{
+    color: darkgoldenrod;
+    background-color: whitesmoke;
+}
+.navbar .navbar1{
+    color: darkgoldenrod;
+}
+.collapse .navbar2{
+    margin-left: 1rem;
+}
+.collapse .navbar-nav .navbar2:hover {
+    color: darkgoldenrod;
+}
+.collapse .navbar-button{
+    background-color: darkgoldenrod;
+    color: white;
+    font-weight: 500;
+}
+.carousel .container .crousel{
+    background-color: darkgoldenrod;
+    color: white;
+    font-weight: 500;
+}
+.navbar .nav-item:focus{
+    box-shadow: none;
+}
+.navbar .nav-item{
+    margin: 0 .625rem;
+}
+.navbar .nav-item .nav-link{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-text);
+    display: inline-block;
+}
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active{
+    color: var(--secondary-color);
+
+}
+.navbar.header-scrolled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgb(255, 255, 255,.85);
+    -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+.feature h1{
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+.about-start .about1{
+    font-weight: 700;
+}
+.about-start .about-client .about-font{
+    color: darkgoldenrod;
+}
+.about-start .about-client .about-bg{
+    background-color: darkgoldenrod;
+    color: white;
+    font-weight: 500;
+}
+
+.feature{
+    position: relative;
+}
+.feature .feature-effect{
+    font-size: 0;
+    overflow: hidden;
+}
+.feature .feature-effect img{
+    transition: all .3s;
+}
+.feature .feature-effect:hover  img{
+    transform: scale(1.2);
+}
+
+/* Team */
+.team_wrapper .card{
+    position: relative;
+    overflow: hidden;
+}
+.team_wrapper .team-info{
+    background-color: white;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 1.25rem;
+    margin-bottom: -4.6875rem;
+    transition: all 0.3s ease-in-out;
+}
+.team_wrapper .card:hover .team-info{
+    margin-bottom: 0;
+}
+.team_wrapper .team-info h5,
+.team_wrapper .team-info p{
+    color: black;
+}
+.team_wrapper .team-info .social-network{
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 1.25rem;
+    margin: 1.25rem -1.25rem -1.25rem;
+    background-color: #021832;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.team_wrapper .team-info .social-network li a{
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    display: block;
+    border-radius: 50%;
+    font-size: .9375rem;
+    color: darkgoldenrod;
+    border: .0625rem solid white;
+}
+.project-effect{
+    position: relative;
+}
+.project-effect .card{
+    font-size: 0;
+    overflow: hidden;
+}
+.project-effect .card img{
+    transition: all .3s;
+}
+.project-effect .card:hover  img{
+    transform: scale(1.2);
+}
+.footer{
+    background: black;
+}
+
+/* Footer */
+.footer_wrapper{
+    width: 100%;
+    background-color: black;
+  }
+  .footer_wrapper h5{
+    color: white;
+    margin-bottom: 1.25rem;
+  }
+  .footer_wrapper ul li{
+    margin-bottom: .5rem;
+    list-style: none;
+  }
+  .footer_wrapper .contact-info li a{
+    color: darkgoldenrod;
+    text-decoration: 0;
+  }
+  .footer_wrapper .link-widget li a,
+  .footer_wrapper p{
+    color: white;
+    text-decoration: 0;
+    font-size: .875rem;
+    padding-left: 1.5rem;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+  .footer_wrapper .link-widget li a:before{
+    content: '\f061';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0.3rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .footer_wrapper .link-widget li a:hover{
+    color: darkgoldenrod;
+    margin-left: .625rem;
+  }
+  .footer_wrapper .social-network a{
+    width: 2.1875rem;
+    height: 2.1875rem;
+    margin: .5rem;
+    line-height: 2rem;
+    font-size: .875rem;
+    display: inline-block;
+    border: 2px solid white;
+    color: white;
+    background: black;
+    text-align: center;
+    -webkit-transition: all 0.3s cubin-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.3s cubin-bezier(0.645, 0.045, 0.355, 1);
+  }
+  .footer_wrapper .social-network a:hover{
+    background-color: white;
+    border-color: 2px solid white;
+    color: darkgoldenrod;
+    transform: translateY(-0.1875rem);
+    box-shadow: 0.625rem .9375rem rgb(0 0 0/10%);
+  }
+  .footer_wrapper .form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: var(--secondary-color);
+  }
+  .footer_wrapper .copyright-section{
+    background-color: #021832;
+    padding: 1.25rem 0.3125rem;
+    text-align: center;
+  }
+  .footer_wrapper .copyright-section a{
+    color: darkgoldenrod;
+  }
+
+  .service-section .services{
+    font-weight: 700;
+}
+.service .services-section .service2{
+    color: darkgoldenrod;
+    font-style: none;
+}
+.service .services-image .service3:hover{
+    color: black;
+}
+.service-item{
+    position: relative;
+}
+.service-item .effect-img{
+    font-size: 0;
+    overflow: hidden;
+}
+.service-item .effect-img img{
+    transition: all .3s;
+}
+.service-item:hover .effect-img img{
+    transform: scale(1.2);
+}
+.service-item .effect-text{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    color: white;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    opacity: 0;
+}
+.service-item .effect-text .inner{
+    position: absolute;
+    color: white;
+    padding: 15px;
+    z-index: 1;
+}
+.service-item .effect-text:before,
+.service-item .effect-text:after{
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 0;
+    content: '';
+}
+.service-item .effect-text:before{
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    /* left: -100%; */
+    top: 0;
+}
+.service-item .effect-text:after{
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    left: 100%;
+    top: 0;
+}
+.service-item:hover .effect-text{
+    opacity: 1;
+}
+.service-item .effect-text .effect-btn{
+    background: darkgoldenrod;
+    color: white;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.Quote .Quote-text h1{
+    font-weight: 700;
+}
+.form .form1 .form-effect{
+    border: 2px solid darkgoldenrod;
+}
+.form .form2 .form-effect{
+    background: darkgoldenrod;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    
+}
+.project{
+    display: flex;
+    justify-content: center;
+}
+.project .heading{
+    float: left;
+}
+.project-effect{
+    position: relative;
+}
+.project-effect .project-img{
+    font-size: 0;
+    overflow: hidden;
+}
+.project-effect .project-img img{
+    transition: all .3s;
+}
+.project-effect .project-img:hover  img{
+    transform: scale(1.2);
+}
+
+.project-effect{
+    position: relative;
+}
+.project-effect .project-img{
+    font-size: 0;
+    overflow: hidden;
+}
+.project-effect .project-img img{
+    transition: all .3s;
+}
+.project-effect:hover .project-img img{
+    transform: scale(1.2);
+}
+.project-effect .project-text{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    color: white;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    opacity: 0;
+}
+.project-effect .project-text.inner1{
+    position: absolute;
+    color: white;
+    padding: 15px;
+    z-index: 1;
+}
+.project-effect .project-text:before,
+.project-effect .project-text:after{
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 0;
+    content: '';
+}
+.project-effect .project-text:before{
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    /* left: -100%; */
+    top: 0;
+}
+.project-effect .project-text:after{
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    left: 100%;
+    top: 0;
+}
+.project-effect:hover .project-text{
+    opacity: 1;
+}
+.contact-form{
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35)0 5px 15px;
+    padding: 40px 30px;
+}
+.map-area{
+    width: 600px;
+    height: 465px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35)0 5px 15px;
+}
+.map-area iframe{
+    width: 100%;
+    height: 100%;
+}
+.collapse .form:hover{
+    background: darkgoldenrod;
+    color: white;
+}
